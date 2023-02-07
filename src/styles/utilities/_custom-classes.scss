@@ -1,0 +1,48 @@
+@use "../utilities/variables" as *;
+@import "../components/pokemonTypeBadge";
+@import "../utilities/spacing";
+
+.container {
+  max-width: 1500px;
+  margin-inline: auto;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+}
+
+.col-10-2 {
+  grid-template-columns: 10fr 2fr;
+}
+
+.col-2-10 {
+  grid-template-columns: 2fr 10fr;
+}
+
+.col-gap-26 {
+  column-gap: 1.625rem;
+}
+
+.row-gap-26 {
+  row-gap: 1.625rem;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.center-align {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}

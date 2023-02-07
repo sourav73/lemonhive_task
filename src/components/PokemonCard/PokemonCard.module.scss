@@ -1,0 +1,79 @@
+@use "../../styles/utilities/variables" as *;
+
+.pokemonCard {
+  position: relative;
+  background: url("../../assets/images/card-bg.png");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 8px;
+  padding: 10px;
+  transition: 0.3s;
+
+  .cardTitle {
+    transition: 0.3s;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background: url("../../assets/images/card-hover-bg.png");
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+.pokemonNumber {
+  position: absolute;
+  top: 1.625rem;
+  left: 1.625rem;
+  font-family: "UbuntuLight";
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.cardImg {
+  background: $accent-gray2;
+  border-radius: 5px;
+  padding: 1rem;
+  img {
+    width: 100%;
+    transition: 0.3s;
+  }
+}
+
+// Card image on hover
+.pokemonCard {
+  &:hover {
+    .cardImg {
+      img {
+        scale: 1.1;
+      }
+    }
+  }
+}
+
+// Card title on hover
+.pokemonCard {
+  &:hover {
+    .cardTitle {
+      color: $white;
+    }
+  }
+}
+
+.cardBody {
+  padding-left: 6px;
+}
+
+.cardTitle {
+  font-family: "UbuntuLight";
+  font-weight: 600;
+  line-height: 18px;
+  color: $accent-black;
+  text-transform: capitalize;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.type {
+  margin-bottom: 0.375rem;
+}

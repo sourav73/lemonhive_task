@@ -1,0 +1,35 @@
+@use "../utilities/variables" as *;
+
+@mixin badge($bg, $px: 4px, $py: 18px) {
+  text-transform: capitalize;
+  padding: $px $py;
+  background: $bg;
+  color: $white;
+  font-size: 14px;
+  line-height: 16px;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+}
+
+$types: (
+  "bug": $secondary-bug,
+  "grass": $secondary-grass,
+  "poison": $secondary-poison,
+  "fire": $secondary-fire,
+  "psychic": $secondary-psychic,
+  "water": $secondary-water,
+  "ice": $secondary-ice,
+  "flying": $secondary-flying,
+);
+
+@each $type, $color in $types {
+  .#{$type}-sm {
+    @include badge($color);
+  }
+}
+
+@each $type, $color in $types {
+  .#{$type}-lg {
+    @include badge($color, 10px, 20px);
+  }
+}

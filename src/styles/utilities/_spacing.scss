@@ -1,0 +1,69 @@
+// Vertical margin
+@for $i from 1 through 26 {
+  .my-#{$i} {
+    margin-block: #{$i}px;
+  }
+}
+
+// Horizontal margin
+@for $i from 1 through 26 {
+  .mx-#{$i} {
+    margin-inline: #{$i}px;
+  }
+}
+
+// Top margin
+@for $i from 1 through 26 {
+  .mt-#{$i} {
+    margin-top: #{$i}px;
+  }
+}
+
+// Bottom margin
+@for $i from 1 through 26 {
+  .mb-#{$i} {
+    margin-bottom: #{$i}px;
+  }
+}
+
+// Vertical padding
+@for $i from 1 through 26 {
+  .py-#{$i} {
+    padding-block: #{$i}px;
+  }
+}
+
+// Horizontal padding
+@for $i from 1 through 26 {
+  .px-#{$i} {
+    padding-inline: #{$i}px;
+  }
+}
+
+// Top padding
+@for $i from 1 through 26 {
+  .pt-#{$i} {
+    padding-top: #{$i}px;
+  }
+}
+
+// Bottom padding
+@for $i from 1 through 26 {
+  .pb-#{$i} {
+    padding-bottom: #{$i}px;
+  }
+}
+
+// Right padding
+@for $i from 1 through 26 {
+  .pr-#{$i} {
+    padding-right: #{$i}px;
+  }
+}
+
+// Left padding
+@for $i from 1 through 26 {
+  .pl-#{$i} {
+    padding-left: #{$i}px;
+  }
+}

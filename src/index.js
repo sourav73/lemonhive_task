@@ -1,11 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
+import "./index.scss";
 import App from "./App";
+import PokemonContextProvider from "./contexts/PokemonContext";
+import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <PokemonContextProvider>
+        <App />
+      </PokemonContextProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );

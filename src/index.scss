@@ -1,0 +1,27 @@
+@import "./styles/utilities/reset";
+@import "./styles/utilities/custom-classes";
+
+@font-face {
+  font-family: "UbuntuRegular";
+  src: local("UbuntuRegular"),
+    url("./assets/fonts/Ubuntu-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "UbuntuBold";
+  src: local("UbuntuBold"),
+    url("./assets/fonts/Ubuntu-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "UbuntuLight";
+  src: local("UbuntuLight"),
+    url("./assets/fonts/Ubuntu-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "UbuntuMedium";
+  src: local("UbuntuMedium"),
+    url("./assets/fonts/Ubuntu-Medium.ttf") format("truetype");
+}
+
+body {
+  font-family: "UbuntuRegular";
+}

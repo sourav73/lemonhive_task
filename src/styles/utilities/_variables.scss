@@ -1,0 +1,27 @@
+$primary-yellow: #ffcb05;
+$primary-blue: #2b73b9;
+$secondary-grass: #9bcc50;
+$secondary-bug: #729f3f;
+$secondary-poison: #b97fc9;
+$secondary-fire: #fc7c23;
+$secondary-psychic: #f366b9;
+$secondary-water: #4592c4;
+$secondary-ice: #3dc7ef;
+$secondary-flying: linear-gradient(
+  to bottom,
+  #3dc7ef 0%,
+  #3dc7ef 50%,
+  #d9d9d9 50%,
+  #d9d9d9 100%
+);
+$accent-gray: #d9d9d9;
+$accent-gray2: #efefef;
+$accent-black: #000000;
+$gradient-orange: linear-gradient(to top left, #fc7c23 0%, #f366b9 100%);
+$white: #ffffff;
+
+$breakpoint-xxl: 1399px;
+$breakpoint-xl: 1199px;
+$breakpoint-lg: 991px;
+$breakpoint-md: 767px;
+$breakpoint-sm: 575px;

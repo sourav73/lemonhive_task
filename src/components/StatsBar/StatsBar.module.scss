@@ -1,0 +1,25 @@
+@use "../../styles/utilities/variables" as *;
+.statsBar {
+  position: relative;
+  display: flex;
+  max-width: 310px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+  .barTotal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    border-radius: 8px;
+    background: $accent-gray;
+  }
+  .barCurrentValue {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    border-radius: 8px;
+    background: #30a7d7;
+  }
+}
