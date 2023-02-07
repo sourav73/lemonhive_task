@@ -100,8 +100,9 @@ const Home = () => {
               {data.pokemons &&
                 data.pokemons.map((pokemon) => (
                   <SwiperSlide key={pokemon.url}>
+                    {console.log(pokemon)}
                     <PokemonCard
-                      imageUrl={pokemon.image}
+                      imageUrl={pokemon.artwork}
                       name={pokemon.name}
                       url={pokemon.url}
                     />
