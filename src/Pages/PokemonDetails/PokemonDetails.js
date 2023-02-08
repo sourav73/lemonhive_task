@@ -22,7 +22,7 @@ const PokemonDetails = () => {
   const [error, setError] = useState(null);
   const placeholderMessage =
     "There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.";
-  const image = location.state.imageUrl;
+  const image = location.state ? location.state.imageUrl : "";
   useEffect(() => {
     dispatch(clearPokemon());
     dispatch(setPokemonImage(image));
@@ -108,7 +108,15 @@ const PokemonDetails = () => {
                 </div>
               </div>
               <div className={`${styles.pokemonImage}`}>
-                <img src={data.pokemonImage} alt={name} />
+                {data.pokemonImage ? (
+                  <img src={data.pokemonImage} alt={name} />
+                ) : (
+                  <img
+                    className="w-100"
+                    src={data.pokemon.sprites.front_default}
+                    alt={name}
+                  />
+                )}
               </div>
               <div className={styles.pokemonStats}>
                 <div className="type">
